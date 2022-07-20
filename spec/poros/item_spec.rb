@@ -19,7 +19,7 @@ RSpec.describe Item do
         name: 'Boots',
         description: "You wear them on your feet.",
         unit_price: 39.99,
-        merchant_id: merchant.id.to_i
+        merchant_id: merchant.id
       }
     }
 
