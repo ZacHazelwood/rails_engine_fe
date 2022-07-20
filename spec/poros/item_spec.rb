@@ -26,7 +26,7 @@ RSpec.describe Item do
     item = Item.new(item_data)
 
     expect(item).to be_a Item
-    expect(item.id).to eq 1
+    expect(item.id).to eq "1"
     expect(item.type).to eq "item"
     expect(item.name).to eq "Boots"
     expect(item.description).to eq "You wear them on your feet."

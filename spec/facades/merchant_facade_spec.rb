@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-Rspec.describe MerchantsFacade do
+RSpec.describe MerchantFacade do
   it "gets all merchants" do
     merchants = MerchantFacade.get_all_merchants
 
@@ -9,13 +9,13 @@ Rspec.describe MerchantsFacade do
   end
 
   it "gets one merchant" do
-    merchant = MerchantFacade.get_one_merchant
+    merchant = MerchantFacade.get_one_merchant('1')
 
     expect(merchant).to be_a Merchant
   end
 
   it "gets a merchant's items" do
-    items = MerchantFacade.get_all_merchant_items
+    items = MerchantFacade.get_all_merchant_items('1')
 
     expect(items).to be_a Array
     expect(items).to be_all Item
